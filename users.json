@@ -1,0 +1,26 @@
+[
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "espinoza.jerald.17@gmail.com.com",
+        "first_name": "Jerald",
+        "last_name": "Espinoza",
+        "birth_date": "1993-06-17",
+        "password": "123456789"
+    },
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "user@example.com",
+        "first_name": "string",
+        "last_name": "string",
+        "birth_date": "2023-01-09",
+        "password": "stringst"
+    },
+    {
+        "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "jerald.espinozaflores.work@gmail.com",
+        "first_name": "Jeanphierre",
+        "last_name": "Flores",
+        "birth_date": "2023-01-09",
+        "password": "stringst2"
+    }
+]
