@@ -1,6 +1,6 @@
 # Python
 from uuid import UUID
-from datetime import date
+from datetime import date, datetime
 from typing import Optional
 
 # Pydantic
@@ -20,7 +20,7 @@ class UserBase(BaseModel):
     email: EmailStr = Field(...)
 
 class UserLogin(UserBase):
-    password = str = Field(
+    password: str = Field(
         ...,
         min_length=8
     )
@@ -38,8 +38,16 @@ class User(UserBase):
     )
     birth_date: Optional[date] = Field(default=None)
 
-class Tweet():
-    pass
+class Tweet(BaseModel):
+    tweet_id: UUID = Field(...)
+    content: str = Field(
+        ...,
+        min_length=1,
+        max_length=256
+    )
+    created_at: datetime = Field(default=datetime.now())
+    updated_at:  Optional[datetime] = Field(default=None)
+    by: User = Field(...)
 
 @app.get(path="/")
 def home():
